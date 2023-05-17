@@ -101,7 +101,7 @@ describe("refills Tests()", () => {
     it("Test if timmy has a coupon discount 10 to his total price", () => {
       expect(withCoupon((totalCost(timmy.pricePerRefill, timmy.refills)),timmy.coupon)).toBe(65);
     });
-       // Test if sarah has not a coupon discount 10$ to her total price
+       // Test if sarah has NOT a coupon discount 10$ to her total price
        it("Test if timmy has a coupon discount 10 to his total price", () => {
         expect(withCoupon((totalCost(sarah.pricePerRefill, sarah.refills)),sarah.coupon)).toBe(50);
       });
